@@ -1,11 +1,15 @@
 package Classroom;
 
+import java.util.Scanner;
+
 public class Recursion {
     public static void main(String[] args) {
         int[] testArray = {1,6,4,2,3,7,3,2,2,8,9,4,2,-3,9};
-        System.out.println(sumArray(testArray));
+        //System.out.println("Non Recursion : " +sumArray(testArray));
 
-        System.out.println(sumArrayRecursion(testArray,testArray.length));
+        //System.out.println("Using Recursion : " +sumArrayRecursion(testArray,testArray.length));
+
+        stringPretiffy();
 
     }
 
@@ -18,11 +22,27 @@ public class Recursion {
         return sum;
     }
 
+
     public static  int sumArrayRecursion(int[] intArray, int arrayLength) {
         if (arrayLength <= 0)
             return 0;
-        return sumArrayRecursion(intArray, arrayLength - 1) + intArray[arrayLength - 1];
+        return intArray[arrayLength - 1] + sumArrayRecursion(intArray, arrayLength - 1) ;
 
     }
+
+    public static void stringPretiffy(){
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter a string: ");
+        String inputStr = input.nextLine();
+
+        System.out.print("Enter the separator: ");
+        char separator = input.next().charAt(0);
+
+        for (char c: inputStr.toCharArray()) {
+            System.out.print(c + "" + separator);
+        }
+    }
 }
+
 
