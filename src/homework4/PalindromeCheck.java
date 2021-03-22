@@ -11,7 +11,7 @@ public class PalindromeCheck {
 
     public static boolean isPal(String str)
     {
-        String s = str.toLowerCase(Locale.ROOT);
+        String s = str.toLowerCase();
 
         // if length is 0 or 1 then String is palindrome
 
