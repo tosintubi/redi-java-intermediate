@@ -72,16 +72,15 @@ public class ArrayOperations {
     }
 
 
-    public static int findItem(int[] arrayItems, int key){
-        ArrayList<Integer> positions = new ArrayList<>();
-        int index = -1;
+    public static ArrayList<Integer> findItem(int[] arrayItems, int key){
+        // Search array list to all occurrences of a key.
+        ArrayList<Integer> indexes = new ArrayList<>();
         for (int i = 0; i < arrayItems.length; i++) {
             if (arrayItems[i] == key){
-                index = i;
-                return index; // returns the first item it found.
+                indexes.add(i);
             }
         }
-        return index;
+        return indexes;
     }
 
 }
