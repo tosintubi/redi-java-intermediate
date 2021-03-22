@@ -6,12 +6,14 @@ import java.util.Scanner;
 public class ArrayOperations {
 
     public static void main(String[] args) {
-//        printReversed();
-//        System.out.println("\n================");
-//        mergeArrays();
+        /*
+        printReversed();
+        System.out.println("\n================");
+        mergeArrays();
+        */
 
         System.out.println("\n==============");
-        int[] testArray = {1,3,6,8,0,3,10};
+        int[] testArray = {1,3,3,8,0,3,10};
         System.out.println(findItem(testArray,3));
         System.out.println(findItem(testArray,2));
     }
