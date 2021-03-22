@@ -1,13 +1,19 @@
 package Classroom;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ArrayOperations {
 
     public static void main(String[] args) {
-        printReversed();
-        System.out.println("\n================");
-        mergeArrays();
+//        printReversed();
+//        System.out.println("\n================");
+//        mergeArrays();
+
+        System.out.println("\n==============");
+        int[] testArray = {1,3,6,8,0,3,10};
+        System.out.println(findItem(testArray,3));
+        System.out.println(findItem(testArray,2));
     }
 
     private static void printReversed(){
@@ -63,6 +69,19 @@ public class ArrayOperations {
         for (int item: mergedArray) {
             System.out.print(item +" ");
         }
+    }
+
+
+    public static int findItem(int[] arrayItems, int key){
+        ArrayList<Integer> positions = new ArrayList<>();
+        int index = -1;
+        for (int i = 0; i < arrayItems.length; i++) {
+            if (arrayItems[i] == key){
+                index = i;
+                return index; // returns the first item it found.
+            }
+        }
+        return index;
     }
 
 }
