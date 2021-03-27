@@ -49,7 +49,6 @@ public class MatrixOperations {
             for(j=0;j<col;j++)
             {
                 sum = (i==j) ? (sum + mat[i][j]) : sum;
-
                 /*  if(i==j)
                 {
                     sum = sum + mat[i][j];
