@@ -31,7 +31,7 @@ public class MatrixOperations {
         }
 
         System.out.println();
-        System.out.println("The elements of the matrix");
+        System.out.println("Elements of the matrix");
         System.out.println("==========================") ;
         for(i=0;i<row;i++)
         {
@@ -41,12 +41,14 @@ public class MatrixOperations {
             }
             System.out.print("\n");
         }
+        System.out.println("==========================") ;
 
+        // Computes the sum of the diagonals of the matrix
         for(i=0;i<row;i++)
         {
             for(j=0;j<col;j++)
             {
-                if(i==j) //this condition checks for diagonal
+                if(i==j)
                 {
                     sum = sum + mat[i][j];
                 }
