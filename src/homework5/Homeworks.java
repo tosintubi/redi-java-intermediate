@@ -21,15 +21,7 @@ public class Homeworks {
 
     /* Write a program to find the  smallest element in an array list of integers */
     public static int smallestArrayList (ArrayList<Integer> arrayList){
-
-        int min = Integer.MAX_VALUE; // Assumes MinValue is the largest integer
-        for (int element :arrayList ) {
-            min = (min <= element) ? min : element; // If minimum < element, then minimum otherwise the element is the smallest
-        }
-        return  min;
-
-
-        //return Collections.min(arrayList);
+        return Collections.min(arrayList);
     }
 
 
