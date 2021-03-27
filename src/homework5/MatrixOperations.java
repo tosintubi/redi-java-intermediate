@@ -48,18 +48,12 @@ public class MatrixOperations {
         {
             for(j=0;j<col;j++)
             {
-
-                int val1 = 10;
-                int val2 = 20;
-
-                int max = val1 >= val2 ? val1 : val2;
-
                 sum = (i==j) ? (sum + mat[i][j]) : sum;
 
-//                if(i==j)
-//                {
-//                    sum = sum + mat[i][j];
-//                }
+                /*  if(i==j)
+                {
+                    sum = sum + mat[i][j];
+                }*/
             }
         }
         return sum;
