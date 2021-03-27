@@ -9,9 +9,7 @@ public class Homeworks {
 
     }
 
-    /*
-    Write a program to find the  smallest element in an array of integers.
-    */
+    /* Write a program to find the  smallest element in an array of integers.  */
     public static int smallestArray (int[] intArray){
 
         int min = Integer.MAX_VALUE; // Assumes MinValue is the largest integer
