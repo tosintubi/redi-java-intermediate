@@ -30,7 +30,9 @@ public class MatrixOperations {
             }
         }
 
-        System.out.println("The elements of the matrix") ;
+        System.out.println();
+        System.out.println("The elements of the matrix");
+        System.out.println("==========================") ;
         for(i=0;i<row;i++)
         {
             for(j=0;j<col;j++)
