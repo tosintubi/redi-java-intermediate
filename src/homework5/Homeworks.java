@@ -18,7 +18,8 @@ public class Homeworks {
 
         int min = Integer.MAX_VALUE; // Assumes MinValue is the largest integer
         for (int element :intArray ) {
-            min = (min <= element) ? min : element; // If minimum < element, then minimum otherwise the element is the smallest
+            min = Math.min(min,element);
+            //min = (min <= element) ? min : element; // If minimum < element, then minimum otherwise the element is the smallest
         }
         return  min;
     }
