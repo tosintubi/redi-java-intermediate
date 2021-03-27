@@ -21,11 +21,11 @@ public class MatrixOperations {
         int[][] mat = new int[row][col];
 
         System.out.println("Enter the elements of the matrix") ;
-        for(i=0;i<row;i++)
+        for(i=0; i<row ;i++)
         {
-            for(j=0;j<col;j++)
+            for(j=0; j<col; j++)
             {
-                System.out.print("Row:  "+ (i+1) +" Col: "+(j+1)+" ==> ");
+                System.out.print("Row: "+ (i+1) +" Col: "+(j+1)+" ==> ");
                 mat[i][j] = sc.nextInt();
             }
         }
