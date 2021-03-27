@@ -37,7 +37,7 @@ public class MatrixOperations {
             {
                 System.out.print(mat[i][j]+"\t");
             }
-            //System.out.println("");
+            System.out.println("");
         }
 
         for(i=0;i<row;i++)
