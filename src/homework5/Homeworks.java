@@ -8,35 +8,35 @@ public class Homeworks {
 
     public static void main(String[] args) {
 
-        int[]  sampleArray = {-1,0,4,3,8,6, -2};
+        int[] sampleArray = {-1, 0, 4, 3, 8, 6, -2};
         smallestSecondElement(sampleArray);
         secondMost(sampleArray);
     }
 
     /* Write a program to find the  smallest element in an array of integers.  */
-    public static int smallestArray (int[] intArray){
+    public static int smallestArray(int[] intArray) {
 
         int min = Integer.MAX_VALUE; // Assumes MinValue is the largest integer
-        for (int element :intArray ) {
-            min = Math.min(min,element);
+        for (int element : intArray) {
+            min = Math.min(min, element);
             //min = (min <= element) ? min : element; // If minimum < element, then minimum otherwise the element is the smallest
         }
-        return  min;
+        return min;
     }
 
     /* Write a program to find the  smallest element in an array list of integers */
-    public static int smallestArrayList (ArrayList<Integer> arrayList){
+    public static int smallestArrayList(ArrayList<Integer> arrayList) {
         return Collections.min(arrayList);
     }
 
 
-    public static void smallestSecondElement(int[] intArray){
-        System.out.println("Original numeric array : "+ Arrays.toString(intArray));
+    public static void smallestSecondElement(int[] intArray) {
+        System.out.println("Original numeric array : " + Arrays.toString(intArray));
         int min = Integer.MAX_VALUE;
         int second_min = Integer.MAX_VALUE;
         for (int i = 0; i < intArray.length; i++) {
-            if(intArray[i]==min){
-                second_min=min;
+            if (intArray[i] == min) {
+                second_min = min;
             } else if (intArray[i] < min) {
                 second_min = min;
                 min = intArray[i];
@@ -50,7 +50,7 @@ public class Homeworks {
 
 
     // Simple implementation. Sort the array in desc(or asc, if ) order then pick the next most highest or smallest element
-    public static void secondMost(int[] intArray){
+    public static void secondMost(int[] intArray) {
         /*if (desc != true) // ascending order
             Arrays.sort(intArray);
         else

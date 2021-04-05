@@ -9,8 +9,8 @@ public class Palindrome {
     }
 
     //One liner!
-    public static String isPalindrome(String stringWord){
+    public static String isPalindrome(String stringWord) {
         return stringWord.equalsIgnoreCase(new StringBuilder(stringWord).reverse().toString())
-                 ? "Yes": "No";
+                ? "Yes" : "No";
     }
 }
