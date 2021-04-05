@@ -60,7 +60,6 @@ public class Fish extends  Animal{
         return (hasScales) ? "Yes" : "No";
     }
 
-
     public void setHasScales(boolean hasScales) {
         this.hasScales = hasScales;
     }
