@@ -28,12 +28,13 @@ public class Fish extends  Animal implements  ISwim{
     @Override
     protected void printInfo() {
         super.printInfo();
-        System.out.println("I am a          : "+ this.getFishCategory());
-        System.out.println("My Name  is     : "+ super.getName());
-        System.out.println("I live in       : "+ this.getFishHabitat());
-        System.out.println("My Max size is  : "+ this.getMaxSize());
-        System.out.println("I live in       : "+ this.getFishHabitat());
-        System.out.println("Am i extinct    : "+ super.getExtinct());
+        System.out.println("I am a              : "+ this.getFishCategory());
+        System.out.println("My Name  is         : "+ super.getName());
+        System.out.println("I live in           : "+ this.getFishHabitat());
+        System.out.println("My Max size is      : "+ this.getMaxSize());
+        System.out.println("I live in           : "+ this.getFishHabitat());
+        System.out.println("Am i extinct        : "+ super.getExtinct());
+        System.out.println("I can weigh up to   : "+ this.maxSize + " pounds");
     }
 
     // Implements swim() from ISwim
