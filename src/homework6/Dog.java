@@ -30,17 +30,17 @@ public class Dog extends  Animal implements IWalk{
     @Override
     protected void printInfo() {
         super.printInfo();
-        System.out.println("I am a          : "+ this.breed + " dog breed");
+        System.out.println("I am a          : "+ this.breed + " dog");
         System.out.println("My Name  is     : "+ super.getName());
         System.out.println("My Owner is     : "+ this.getOwner());
         System.out.println("I am            : "+ this.getAge() + " years old");
         System.out.println("My color is     : "+ this.getColor());
-        System.out.println("I am            : "+ this.getHeight() + " high");
+        System.out.println("I am            : "+ this.getHeight() + " meters high");
     }
 
 
-    //private method.. Only dogs bark
-     void bark(){
+    //.. Only dogs bark
+     protected void bark(){
         System.out.println(super.getName() + " is barking ..."+ "Woof... Woof... Woof!!!");
     }
 
