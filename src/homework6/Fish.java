@@ -24,10 +24,10 @@ public class Fish extends  Animal implements  ISwim{
     }
 
 
-    // Overrides print from superclass
+    // Overrides print() from superclass
     @Override
-    protected void print() {
-        super.print();
+    protected void printInfo() {
+        super.printInfo();
         System.out.println("I am a          : "+ this.getFishCategory());
         System.out.println("My Name  is     : "+ super.getName());
         System.out.println("I live in       : "+ this.getFishHabitat());
@@ -36,7 +36,7 @@ public class Fish extends  Animal implements  ISwim{
         System.out.println("Am i extinct    : "+ super.getExtinct());
     }
 
-    // Implements swim from ISwim
+    // Implements swim() from ISwim
     @Override
     public void swim() {
         System.out.println("I am swimming ");

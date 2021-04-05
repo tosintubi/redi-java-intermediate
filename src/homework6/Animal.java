@@ -24,7 +24,7 @@ public  class Animal{
         System.out.println("I'm an animal");
     }
 
-    protected void print(){
+    protected void printInfo(){
 
     }
     public String getExtinct() {
