@@ -40,7 +40,7 @@ public class Dog extends  Animal implements IWalk{
 
 
     //private method.. Only dogs bark
-    private void bark(){
+     void bark(){
         System.out.println(super.getName() + " is barking ..."+ "Woof... Woof... Woof!!!");
     }
 

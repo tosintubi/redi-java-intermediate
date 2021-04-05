@@ -6,5 +6,16 @@ public class Main {
         whale.printInfo();
 
         System.out.println("==========================");
+
+        Dog unoDog = new Dog("Uno");
+        unoDog.setAge(3);
+        unoDog.setBreed(DogBreed.German_Shepherd);
+        unoDog.setOwner("Marx");
+        unoDog.setHeight(0.4F);
+        unoDog.setColor("Brown");
+        unoDog.printInfo();
+
+        System.out.println("==========================");
+        unoDog.bark();
     }
 }
