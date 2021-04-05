@@ -1,7 +1,7 @@
 package homework6;
 
 
-public class Fish extends  Animal{
+public class Fish extends  Animal implements  ISwim{
 
     private String Category;
     private Habitat fishHabitat;
@@ -23,12 +23,8 @@ public class Fish extends  Animal{
         super();
     }
 
-    @Override
-    public void swim() {
-        super.swim();
-        System.out.println("I'm swimming ");
-    }
 
+    // Overrides print from superclass
     @Override
     protected void print() {
         super.print();
@@ -38,6 +34,12 @@ public class Fish extends  Animal{
         System.out.println("My Max size is  : "+ this.getMaxSize());
         System.out.println("I live in       : "+ this.getFishHabitat());
         System.out.println("Am i extinct    : "+ super.getExtinct());
+    }
+
+    // Implements swim from ISwim
+    @Override
+    public void swim() {
+        System.out.println("I am swimming ");
     }
 
     public String getFishCategory() {
@@ -79,4 +81,6 @@ public class Fish extends  Animal{
     public void setMaxSize(float maxSize) {
         this.maxSize = maxSize;
     }
+
+
 }

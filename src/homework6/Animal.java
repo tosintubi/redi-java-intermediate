@@ -1,6 +1,6 @@
 package homework6;
 
-public  class Animal implements  ISwim, IFly{
+public  class Animal{
     public String getName() {
         return name;
     }
@@ -19,13 +19,6 @@ public  class Animal implements  ISwim, IFly{
         this.name = name;
     }
 
-    @Override
-    public void fly() {
-    }
-
-    @Override
-    public void swim() {
-    }
 
     private void whoAmI(){
         System.out.println("I'm an animal");
