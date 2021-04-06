@@ -1,14 +1,14 @@
 package homework6;
 
 public enum DogBreed {
-    Labrador_Retrievers,
-    French_Bulldog,
-    German_Shepherd,
-    Golden_Retriever,
-    Bulldog,
-    Poodle,
-    Beagle,
-    Rottweiler,
-    Dachshunds,
-    Llasa_Apso
+    LABRADOR_RETRIEVERS,
+    FRENCH_BULLDOG,
+    GERMAN_SHEPHERD,
+    GOLDEN_RETRIEVER,
+    BULLDOG,
+    POODLE,
+    BEAGLE,
+    ROTTWEILER,
+    DACHSHUNDS,
+    LLASA_APSO
 }

@@ -10,7 +10,7 @@ public class Main {
 
         Dog unoDog = new Dog("Uno");
         unoDog.setAge(3);
-        unoDog.setBreed(DogBreed.German_Shepherd);
+        unoDog.setBreed(DogBreed.GERMAN_SHEPHERD);
         unoDog.setOwner("Marx");
         unoDog.setHeight(0.4F);
         unoDog.setColor("Brown");
