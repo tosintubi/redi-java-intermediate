@@ -23,7 +23,6 @@ public class Fish extends  Animal implements  ISwim{
         super();
     }
 
-
     // Overrides print() from superclass
     @Override
     protected void printInfo() {
@@ -40,7 +39,7 @@ public class Fish extends  Animal implements  ISwim{
     // Implements swim() from ISwim
     @Override
     public void swim() {
-        System.out.println("I am swimming ... i can reach up to 28 mph while swimming");
+        System.out.println("I am currently swimming ... i can reach up to 28 mph while swimming");
     }
 
     public String getFishCategory() {
