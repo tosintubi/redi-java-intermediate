@@ -82,5 +82,4 @@ public class Fish extends  Animal implements  ISwim{
         this.maxSize = maxSize;
     }
 
-
 }
