@@ -19,10 +19,6 @@ public class Fish extends  Animal implements  ISwim{
 
     }
 
-    public Fish() {
-        super();
-    }
-
     // Overrides print() from superclass
     @Override
     protected void printInfo() {
