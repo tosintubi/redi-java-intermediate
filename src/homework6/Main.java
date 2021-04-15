@@ -5,7 +5,6 @@ public class Main {
         Fish whale = new Fish("Willy","Blue Whale",Habitat.FRESH_WATER,false, 14,250);
         whale.printInfo();
         whale.swim();
-
         
         System.out.println("==========================");
 
