@@ -6,6 +6,7 @@ public class Main {
         whale.printInfo();
         whale.swim();
 
+        
         System.out.println("==========================");
 
         Dog unoDog = new Dog("Uno");
