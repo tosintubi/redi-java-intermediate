@@ -29,6 +29,10 @@ public class SemesterCourse {
         return true; // after adding student to enrolledStudents
     }
 
+    public Boolean enrollStudent(List<Student> student){
+        // Enroll multiple Students at once. Should be @Transactional
+        return true; // after adding student to enrolledStudents
+    }
 }
 
 
