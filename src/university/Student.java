@@ -15,6 +15,20 @@ public class Student  extends Person{
         super(id, firstName, lastName, email, dateOfBirth);
     }
 
+    public void setMatriculationNumber(String matriculationNumber) {
+        this.matriculationNumber = matriculationNumber;
+    }
+
+    public String getMatriculationNumber() {
+        return matriculationNumber;
+    }
+
+    public CourseParticipations getCourseParticipations() {
+        return courseParticipations;
+    }
+
+
+
 
     public int getCreditPoints(){
         // TODO: implement logic to calculate credit points student has completed
@@ -34,8 +48,7 @@ public class Student  extends Person{
 
 
 
-
-    /*
+/*
 CourseParticipations
         Immatrikulations#
         ----
