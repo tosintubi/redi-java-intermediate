@@ -8,6 +8,7 @@ public class Student  extends Person{
 
     private String matriculationNumber;
     private CourseParticipations courseParticipations;
+    private int creditPoints;
 
 
     public Student(String id, String firstName, String lastName, String email, LocalDate dateOfBirth) {
@@ -17,7 +18,18 @@ public class Student  extends Person{
 
     public int getCreditPoints(){
         // TODO: implement logic to calculate credit points student has completed
-        return 1;
+        return creditPoints;
+    }
+
+    public boolean enrolToCourse(){
+        // TODO: implement logic to calculate credit points student has completed
+        return false;
+    }
+
+    public boolean dropCourse(){
+        // TODO: implement logic to drop a course already registered
+        // Check if already registered.
+        return false;
     }
 
 
