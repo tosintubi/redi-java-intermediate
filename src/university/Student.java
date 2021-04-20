@@ -15,6 +15,14 @@ public class Student  extends Person{
     }
 
 
+    public int getCreditPoints(){
+        // TODO: implement logic to calculate credit points student has completed
+        return 1;
+    }
+
+
+
+
     /*
 CourseParticipations
         Immatrikulations#
