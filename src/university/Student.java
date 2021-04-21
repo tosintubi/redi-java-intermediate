@@ -24,7 +24,7 @@ public class Student  extends Person{
         return matriculationNumber;
     }
 
-    public CourseParticipations getCourseParticipations() {
+    public List<CourseParticipations> getCourseParticipations() {
         return courseParticipations;
     }
 
