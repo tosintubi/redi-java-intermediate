@@ -44,6 +44,11 @@ public class Student  extends Person{
         return false;
     }
 
+    public boolean graduate(){
+        // TODO: implement logic to Check credits number of credits student has completed and graduate if its up to 90 ECTS
+        return false;
+    }
+
 
 
 /*
