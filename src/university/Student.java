@@ -3,11 +3,12 @@ package university;
 import university.course.CourseParticipations;
 
 import java.time.LocalDate;
+import java.util.List;
 
 public class Student  extends Person{
 
     private String matriculationNumber;
-    private CourseParticipations courseParticipations;
+    private List<CourseParticipations> courseParticipations;
     private int creditPoints;
 
 
