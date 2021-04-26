@@ -8,4 +8,14 @@ public class Point {
         this.x = x;
         this.y = y;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null)
+            return false;
+        if (!getClass().equals(obj.getClass())){
+            System.out.println(obj.getClass());
+        }
+        return true;
+    }
 }
