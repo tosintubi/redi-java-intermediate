@@ -42,6 +42,9 @@ public class Student  extends Person{
     public boolean dropCourse(){
         // TODO: implement logic to drop a course already registered
         // Check if already registered.
+        int a = 8;
+        int b = 9;
+
         return false;
     }
 
