@@ -34,17 +34,3 @@ public class SemesterCourse {
         return true; // after adding student to enrolledStudents
     }
 }
-
-
-
-
-/*Course
-        Dates/Times
-        Location
-        Max # Students
-        Min # Students
-        List<Student>
-Professor
-        Semester
-        ---
-        enrollStudent(student)*/
