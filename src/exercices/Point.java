@@ -1,6 +1,7 @@
 package exercices;
 
 public class Point {
+
     private final Integer x;
     private final Integer y;
 
