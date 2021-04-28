@@ -8,7 +8,7 @@ import java.util.Set;
 public class ArrayOperations {
 
 
-    public int[] removeDuplicates(int[] arrayList){
+    public  static  int[] removeDuplicates(int[] arrayList){
         Set<Integer> intSet = new HashSet<>();
         for (int item :arrayList) {
             intSet.add(item);
