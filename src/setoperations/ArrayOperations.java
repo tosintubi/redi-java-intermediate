@@ -7,6 +7,12 @@ import java.util.Set;
 
 public class ArrayOperations {
 
+    public static void main(String[] args) {
+        int[] intArray = {2,6,8,2,5,7,8,9,9,0};
+        System.out.println(Arrays.toString(intArray));
+    }
+
+
 
     public  static  int[] removeDuplicates(int[] arrayList){
         Set<Integer> intSet = new HashSet<>();
