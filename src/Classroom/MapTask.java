@@ -7,7 +7,7 @@ import java.util.TreeMap;
 public  class MapTask {
 
     static Map<String,String> employees = new HashMap<>();
-    //static Map<String,String> employees = new TreeMap<>();
+    //static Map<String,String> employees = new TreeMap<>(String.CASE_INSENSITIVE_ORDER);
     public static void main(String[] args) {
 
         // Add employees
@@ -22,5 +22,7 @@ public  class MapTask {
         for (Map.Entry<String, String> items :employees.entrySet()){
             System.out.println("Employee Id: "+ items.getKey() +" Name: "+ items.getValue());
         }
+        System.out.println(employees.containsKey("A1235".toLowerCase()));
+
     }
 }
