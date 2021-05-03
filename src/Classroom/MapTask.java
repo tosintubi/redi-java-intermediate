@@ -1,5 +1,6 @@
 package Classroom;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
@@ -40,7 +41,7 @@ public  class MapTask {
 
         students.putIfAbsent("miko", new Student("Miko", "Poland"));
         students.putIfAbsent("christo", new Student("Christo", "Nigeria"));
-        students.putIfAbsent("tosin", new Student("Nigeria", "Poland"));
+        students.putIfAbsent("tosin", new Student("Tosin", "Poland"));
         students.putIfAbsent("reza", new Student("reza", "Iraq"));
         students.putIfAbsent("merhawit", new Student("merhawit", "Ethopia"));
         students.putIfAbsent("alex", new Student("Alex", "Germany"));
@@ -48,6 +49,17 @@ public  class MapTask {
 
         for (Map.Entry<String, Student> student:students.entrySet()){
             System.out.println("name:"+ student.getKey() + ", country:"+ student.getValue().getStudentCountry());
+        }
+
+        Map<String, Student> countries = new HashMap<>();
+        for (Map.Entry<String, Student> student:students.entrySet()){
+            countries.put(student.getValue().getStudentCountry(), student.getValue());
+        }
+
+
+        System.out.println("The unique countries are ");
+        for (Map.Entry<String, Student> country :countries.entrySet()){
+            System.out.println(country.getKey());
         }
     }
 }
