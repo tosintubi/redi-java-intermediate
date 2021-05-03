@@ -47,16 +47,18 @@ public  class MapTask {
         students.putIfAbsent("alex", new Student("Alex", "Germany"));
         students.putIfAbsent("nawar", new Student("Nawar", "Syria"));
 
+        // Prints the student names and their countries
         for (Map.Entry<String, Student> student:students.entrySet()){
             System.out.println("name:"+ student.getKey() + ", country:"+ student.getValue().getStudentCountry());
         }
 
+        // Created a <country, Student> hashmap, and put the entries from the students HashMap
         Map<String, Student> countries = new HashMap<>();
         for (Map.Entry<String, Student> student:students.entrySet()){
             countries.put(student.getValue().getStudentCountry(), student.getValue());
         }
 
-
+        // Prints the unique countries
         System.out.println("The unique countries are ");
         for (Map.Entry<String, Student> country :countries.entrySet()){
             System.out.println(country.getKey());
