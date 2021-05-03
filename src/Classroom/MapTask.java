@@ -10,20 +10,22 @@ public  class MapTask {
     //static Map<String,String> employees = new TreeMap<>(String.CASE_INSENSITIVE_ORDER);
     public static void main(String[] args) {
 
-        // Add employees
+        /*// Add employees
         employees.put("a1234", "Steve Jobs");
         employees.put("a1235", "Bill Gates");
         employees.put("a1236", "Jeff Bezos");
         employees.put("a1237", "Larry Page");
         employees.put("a1238", "Sergey Brin");
+        employees.put(null, "Sergey Brin");
 
        // System.out.println(employees.size());
 
         for (Map.Entry<String, String> items :employees.entrySet()){
             System.out.println("Employee Id: "+ items.getKey() +" Name: "+ items.getValue());
         }
-        System.out.println(employees.containsKey("A1235".toLowerCase()));
+        System.out.println(employees.containsKey("A1235".toLowerCase()));*/
 
+        printStudents();
     }
 
 
@@ -31,5 +33,21 @@ public  class MapTask {
         HashMap<String, String> dictionary = new HashMap<>();
         String germanWord = dictionary.get(englishKey);
         return Objects.requireNonNullElse(germanWord, "Sorry, I don’t know such a word");
+    }
+
+    public static void printStudents(){
+        Map<String, Student> students = new HashMap<>();
+
+        students.putIfAbsent("miko", new Student("Miko", "Poland"));
+        students.putIfAbsent("christo", new Student("Christo", "Nigeria"));
+        students.putIfAbsent("tosin", new Student("Nigeria", "Poland"));
+        students.putIfAbsent("reza", new Student("reza", "Iraq"));
+        students.putIfAbsent("merhawit", new Student("merhawit", "Ethopia"));
+        students.putIfAbsent("alex", new Student("Alex", "Germany"));
+        students.putIfAbsent("nawar", new Student("Nawar", "Syria"));
+
+        for (Map.Entry<String, Student> student:students.entrySet()){
+            System.out.println("name:"+ student.getKey() + ", country:"+ student.getValue().getStudentCountry());
+        }
     }
 }
