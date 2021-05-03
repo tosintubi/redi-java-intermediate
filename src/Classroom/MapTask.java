@@ -1,6 +1,7 @@
 package Classroom;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -24,5 +25,16 @@ public  class MapTask {
         }
         System.out.println(employees.containsKey("A1235".toLowerCase()));
 
+    }
+
+    public static  String translator(String englishKey) {
+        HashMap<String, String> dictionary = new HashMap<>();
+
+        String germanWord = dictionary.get(englishKey);
+        if (germanWord != null) {
+            return germanWord;
+        } else {
+            return "Sorry, I don’t know such a word";
+        }
     }
 }
