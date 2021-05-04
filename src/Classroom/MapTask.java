@@ -59,7 +59,7 @@ public  class MapTask {
             countries.put(student.getValue().getStudentCountry(), student.getValue());
         }
 
-        // Prints the unique countries
+        // Print the unique countries
         System.out.println("The unique countries are ");
         for (Map.Entry<String, Student> country :countries.entrySet()){
             System.out.println(country.getKey());
