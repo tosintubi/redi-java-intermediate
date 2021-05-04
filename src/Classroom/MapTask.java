@@ -52,6 +52,7 @@ public  class MapTask {
             System.out.println("name:"+ student.getKey() + ", country:"+ student.getValue().getStudentCountry());
         }
 
+
         // Created a <country, Student> hashmap, and put the entries from the students HashMap
         Map<String, Student> countries = new HashMap<>();
         for (Map.Entry<String, Student> student:students.entrySet()){
