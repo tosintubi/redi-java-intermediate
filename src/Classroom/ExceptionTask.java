@@ -16,13 +16,12 @@ public class ExceptionTask  {
         if (tokens[0].length() !=2 ||  tokens[1].length() !=2 || tokens[2].length() !=4){
             throw  new DateTimeException("The String is not in the required format");
         }
-        for (int i = 0; i < tokens.length; i++) {
-            String temp = tokens[i];
+        for (String temp : tokens) {
             for (int j = 0; j < temp.length(); j++) {
-                 char idx = temp.charAt(j);
-                 if (!(idx >= '0' && idx <='9')){
-                     throw  new DateTimeException("The String is not in the required format");
-                 }
+                char idx = temp.charAt(j);
+                if (!(idx >= '0' && idx <= '9')) {
+                    throw new DateTimeException("The String is not in the required format");
+                }
             }
         }
     }
