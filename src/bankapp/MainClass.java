@@ -10,5 +10,8 @@ public class MainClass {
 
         Transaction maxTx = tosinAccount.maxExpense();
         System.out.println("The biggest payment is:"+ maxTx.getId() + " ["+ maxTx.getAmount() +"$, "+ maxTx.getTransactionType() + ", "+ maxTx.getYear()+ ","+ maxTx.getMonth()+"]");
+
+        System.out.println("========================");
+        System.out.println("The total income is: "+tosinAccount.totalIncome()+"$");
     }
 }
