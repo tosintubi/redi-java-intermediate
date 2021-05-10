@@ -27,4 +27,14 @@ public class Account {
         }
         return  maxTransaction;
     }
+
+    public Float totalIncome(){
+        float total = 0F;
+        for (Transaction transaction: this.transactions) {
+            if (transaction.getTransactionType() == TransactionType.INCOME ){
+               total+=transaction.getAmount();
+            }
+        }
+        return total;
+    }
 }
