@@ -3,7 +3,7 @@ package bankapp;
 import java.util.ArrayList;
 
 public class Account {
-    private String accountHolder;
+    private final String accountHolder;
     private ArrayList<Transaction> transactions;
 
     public Account(String accountHolder) {
