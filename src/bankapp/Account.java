@@ -15,4 +15,16 @@ public class Account {
         transactions.add(transaction);
         return transactions.size();
     }
+
+    public Transaction maxExpense(){
+        Transaction maxTransaction = null;
+        float maxValue = 0F;
+        for (Transaction transaction: this.transactions) {
+            if ((maxValue > transaction.getAmount() && transaction.getTransactionType() != TransactionType.INCOME )){
+                maxValue = transaction.getAmount();
+                maxTransaction = transaction;
+            }
+        }
+        return  maxTransaction;
+    }
 }
