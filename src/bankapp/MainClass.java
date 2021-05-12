@@ -2,7 +2,7 @@ package bankapp;
 
 public class MainClass {
     public static void main(String[] args) {
-        Account tosinAccount = new Account("John Doe ");
+        Account tosinAccount = new Account("John Doe");
         tosinAccount.addTransaction(new Transaction(250F,"Dec", "2020", TransactionType.INCOME));
         tosinAccount.addTransaction(new Transaction(28F,"Jan", "2021", TransactionType.INCOME));
         tosinAccount.addTransaction(new Transaction(50F,"Feb", "2021", TransactionType.INCOME));
