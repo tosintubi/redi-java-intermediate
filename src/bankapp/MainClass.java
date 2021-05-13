@@ -14,7 +14,7 @@ public class MainClass {
         someAccount.addTransaction(new Transaction(90F,"May", "2021", TransactionType.INCOME));
 
         Transaction maxTx = someAccount.maxExpense();
-        System.out.println("The biggest payment is:"+ maxTx.getId() + " ["+ maxTx.getAmount() +"$, "+ maxTx.getTransactionType() + ", "+ maxTx.getYear()+ ","+ maxTx.getMonth()+"]");
+        System.out.println("The biggest payment is:"+ maxTx.getId() + " [ "+ maxTx.getAmount() +"$, "+ maxTx.getTransactionType() + ", "+ maxTx.getYear()+ ","+ maxTx.getMonth()+"]");
 
         System.out.println("========================");
         System.out.println("The total income is: "+someAccount.totalIncome()+"$");
