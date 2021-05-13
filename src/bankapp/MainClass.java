@@ -11,7 +11,7 @@ public class MainClass {
         someAccount.addTransaction(new Transaction(-11.70F,"May", "2019", TransactionType.ENTERTAINMENT));
         someAccount.addTransaction(new Transaction(-4.70F,"Jan", "2021", TransactionType.ENTERTAINMENT));
         someAccount.addTransaction(new Transaction(-2.70F,"May", "2020", TransactionType.ENTERTAINMENT));
-        someAccount.addTransaction(new Transaction(90F,"May", "2021", TransactionType.INCOME));
+        someAccount.addTransaction(new Transaction(190F,"May", "2021", TransactionType.INCOME));
 
         Transaction maxTx = someAccount.maxExpense();
         System.out.println("The biggest payment is:"+ maxTx.getId() + " [ "+ maxTx.getAmount() +"$, "+ maxTx.getTransactionType() + ", "+ maxTx.getYear()+ ","+ maxTx.getMonth()+"]");
