@@ -18,7 +18,7 @@ public class Account {
 
     public Transaction maxExpense(){
         Transaction maxTransaction = null;
-        float maxValue = 0F;
+        Double maxValue = 0D;
         for (Transaction transaction: this.transactions) {
             if ((maxValue > transaction.getAmount() && transaction.getTransactionType() != TransactionType.INCOME )){
                 maxValue = transaction.getAmount();

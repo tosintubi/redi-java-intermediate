@@ -4,12 +4,12 @@ import java.util.UUID;
 
 public class Transaction {
     private UUID id;
-    private  Float amount;
+    private  Double amount;
     private String month;
     private String year;
     private TransactionType transactionType;
 
-    public Transaction( Float amount, String month, String year, TransactionType transactionType) {
+    public Transaction( Double amount, String month, String year, TransactionType transactionType) {
         this.id = UUID.randomUUID();
         this.amount = amount;
         this.month = month;
@@ -21,7 +21,7 @@ public class Transaction {
         return id;
     }
 
-    public Float getAmount() {
+    public Double getAmount() {
         return amount;
     }
 
