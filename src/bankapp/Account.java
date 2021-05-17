@@ -1,6 +1,9 @@
 package bankapp;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
 
 public class Account {
     private final String accountHolder;
@@ -36,5 +39,27 @@ public class Account {
             }
         }
         return total;
+    }
+    public void paymentGroupedByType(List<Transaction> transactionList){
+        System.out.println("How do you spend your money: ");
+
+        Set<TransactionType> types = new TreeSet<>();
+        for (Transaction paymentTransaction : transactionList){
+            types.add(paymentTransaction.getTransactionType());
+        }
+        for (TransactionType type: types){
+            paymentsTotalPerType(transactionList, type);
+        }
+    }
+
+    private void paymentsTotalPerType(List<Transaction> payments,
+                                             TransactionType type) {
+        double totalSum = 0;
+        for (Transaction payment: payments) {
+            if (payment.getTransactionType() == type) {
+                totalSum = totalSum + payment.getAmount();
+            }
+        }
+        System.out.println(type + ": " + totalSum);
     }
 }
